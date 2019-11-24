@@ -16,6 +16,7 @@
     <Folder Include="Repositories\" />
     <Folder Include="GraphQL\" />
     <Folder Include="GraphQL\Types\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BooksQL.Common\BooksQL.Common.csproj">
