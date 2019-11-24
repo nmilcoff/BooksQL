@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BooksQL.Common;
+using BooksQL.API.Entities;
 
 namespace BooksQL.API.Repositories
 {

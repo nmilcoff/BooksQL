@@ -1,5 +1,5 @@
 ﻿using System;
-using BooksQL.Common;
+using BooksQL.API.Entities;
 using GraphQL.Types;
 
 namespace BooksQL.API.GraphQL.Types

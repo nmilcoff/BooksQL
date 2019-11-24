@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BooksQL.Common
+namespace BooksQL.API.Entities
 {
     public enum Genre
     {

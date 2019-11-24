@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using BooksQL.ViewModels;
 using Xamarin.Forms;
 
 namespace BooksQL
@@ -13,9 +9,12 @@ namespace BooksQL
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        private MainViewModel ViewModel => (MainViewModel)BindingContext;
+
         public MainPage()
         {
             InitializeComponent();
-        }
+            BindingContext = new MainViewModel();
+        } 
     }
 }

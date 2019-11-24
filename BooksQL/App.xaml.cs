@@ -1,4 +1,5 @@
 ﻿using System;
+using BooksQL.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,8 @@ namespace BooksQL
         public App()
         {
             InitializeComponent();
+
+            DependencyService.Register<BooksService>();
 
             MainPage = new MainPage();
         }
