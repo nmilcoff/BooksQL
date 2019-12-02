@@ -74,5 +74,13 @@ namespace BooksQL.API.Repositories
         {
             return Task.FromResult(Reviews.Where(r => r.BookISBN == isbn));
         }
+
+        public Task<BookReview> CreateBookReview(BookReview bookReview)
+        {
+            var last = Reviews.Last();
+            bookReview.Id = last.Id + 1;
+            Reviews.Add(bookReview);
+            return Task.FromResult(bookReview);
+        }
     }
 }

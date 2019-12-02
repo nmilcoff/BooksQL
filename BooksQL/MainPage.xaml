@@ -27,7 +27,7 @@
                                    FontAttributes="Bold" />
                             <Label Grid.Row="1"
                                    Grid.Column="1"
-                                   Text="{Binding ISBN}"
+                                   Text="{Binding Id}"
                                    FontAttributes="Italic"
                                    VerticalOptions="End" />
                         </Grid>

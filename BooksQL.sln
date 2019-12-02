@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksQL", "BooksQL\BooksQL.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{D03EA5D6-6FD8-41D9-85CF-1E3652B7E0B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksQL.Common", "BooksQL.Common\BooksQL.Common.csproj", "{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,18 +69,6 @@ Global
 		{5A272B1C-7179-41BD-92D5-91C5EA7249AA}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{5A272B1C-7179-41BD-92D5-91C5EA7249AA}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{5A272B1C-7179-41BD-92D5-91C5EA7249AA}.Release|iPhone.Build.0 = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{3F708B87-D55E-4EF2-B744-A3509C0C7A6C}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5A272B1C-7179-41BD-92D5-91C5EA7249AA} = {D03EA5D6-6FD8-41D9-85CF-1E3652B7E0B2}

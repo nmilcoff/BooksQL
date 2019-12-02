@@ -10,7 +10,8 @@ namespace BooksQL.API.GraphQL
         {
             Query = dependencyResolver.Resolve<BooksQuery>();
 
-            //Mutation =
+            Mutation = dependencyResolver.Resolve<BooksMutation>();
+
             //Subscription =
         }
     }

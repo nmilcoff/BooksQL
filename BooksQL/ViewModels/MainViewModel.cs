@@ -35,6 +35,7 @@ namespace BooksQL.ViewModels
                 var books = await _booksService.GetBooks();
 
                 Books.Clear();
+
                 foreach (var book in books)
                 {
                     Books.Add(book);

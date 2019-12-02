@@ -9,15 +9,27 @@ using Xablu.WebApiClient.Services.GraphQL;
 namespace BooksQL.Services
 {
     public class BooksService
-    { 
-        public async Task<IEnumerable<Book>> GetBooks()
-        {
-            var webApiClient = WebApiClientFactory.Get<IBooksApi>("http://localhost:5000");
+    {
+        private readonly IWebApiClient<IBooksApi> _webApiClient;
 
-            var booksResponse = await webApiClient.SendQueryAsync(new Request<BooksResponseModel>());
+        public BooksService()
+        {
+            _webApiClient = WebApiClientFactory.Get<IBooksApi>("http://localhost:5000");
+        }
+
+        public async Task<IEnumerable<Book>> GetBooks()
+        { 
+            var booksResponse = await _webApiClient.SendQueryAsync(new Request<BooksResponseModel>());
 
             return booksResponse.Books;
         }
+
+        //public async Task CreateReview()
+        //{
+        //   var result = await _webApiClient.SendMutationAsync<BookReview>(
+        //       "mutation ($review: reviewInput!) { createReview(review: $review) { id review } }",
+        //       new { review = new { bookISBN = "0544272994", review = "This is a mutation test" } });
+        //}
     }
 
     public class BooksResponseModel
