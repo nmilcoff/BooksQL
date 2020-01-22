@@ -32,6 +32,8 @@ namespace BooksQL.ViewModels
             {
                 IsRefreshing = true;
 
+                await _booksService.CreateReview();
+
                 var books = await _booksService.GetBooks();
 
                 Books.Clear();
